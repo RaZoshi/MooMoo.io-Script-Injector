@@ -18,9 +18,7 @@
 
 (async function() {
     "use strict"
-
-    const scriptLink = "http://127.0.0.1:5500/script.js";
-
+    
     await fetch("").then((res) => res.text()).then((text) => {
         eval(text);
     });
